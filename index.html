@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Travel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="logo">
+        <img src="travelLogo.png" height="80px" width="80px" alt="no image">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>205 Fida Walinton, Tongo Street Front, INDIA</span>
+      </div>
+    </div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+      <img src="https://encrypted-tbn0.JJgstatic.com/images?q=tbn:ANd9GcRydfv4AtNI2Ck8qZ_cAT2fL9nGsPQcIcOLlg&usqp=CAU" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#about">Book</a> </li>
+          <li> <a href="#room">Pakages</a> </li>
+          <li> <a href="#services">Services</a> </li>
+          <li> <a href="#shop">shop</a> </li>
+          <li> <a href="#testimonials">testimonials</a> </li>
+          <li> <a href="#gallary">gallary</a> </li>
+          <li> <a href="#blog">blog</a> </li>
+          <li> <a href="#contact">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>+000 1234 5678</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Adventure is worthwhile.</h1>
+      <p>Discover the place where you have fun & enjoy a lot.</p>
+
+      <div class="content grid">
+        <div class="box">
+          <span>ARRIVAL DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>DEPARTURE DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>ADULTS</span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <span>CHILDREN </span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPLORE</h5>
+        <h2>We are cool to give you pleasure by Train 🚂</h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>"May you have a lot of fun and enjoy the adventure of a train journey!"
+          </h3>
+          <p>Embarking on an adventure journey by train opens up a world of advantages and cherished memories. The rhythmic chug of the train becomes the soundtrack to an exhilarating experience that road trips or flights can't quite capture. The foremost advantage lies in the scenic beauty that unfolds along the tracks, offering a constantly changing landscape that paints a vivid backdrop to the journey. Unlike other modes of travel, trains provide the freedom to move about, allowing adventurers to soak in the panoramic views and interact with fellow travelers. The unique stops along the route present opportunities for exploration, revealing hidden gems and local cultures that might be missed through other means of transportation. Additionally, the very act of journeying by train fosters a sense of nostalgia, connecting travelers with the romance of rail travel. From the camaraderie formed during the journey to the thrill of discovering new destinations, every moment becomes a part of the tapestry of unforgettable memories. The adventure journey by train, with its blend of scenic wonders and shared experiences, transforms the ordinary into an extraordinary escapade, etching stories that linger in the adventurer's heart long after the journey concludes.</p>
+          
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="right">
+          <img src="https://tracystravelsintime.com/wp-content/uploads/2018/10/train-in-switzerland.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW </h5>
+            <h3>"City of Love ❤️- Paris" </h3>
+          </div>
+          <p>Paris, often referred to as the "City of Love," is a timeless destination celebrated for its enchanting city views. The French capital captivates visitors with its romantic ambiance and iconic landmarks that contribute to an unparalleled charm. One of the most recognizable symbols of Paris, the Eiffel Tower, stands majestically against the skyline, offering breathtaking panoramas that are particularly enchanting at sunset. The Seine River winds through the city, adorned with picturesque bridges, providing a romantic setting for a leisurely cruise. Charming streetside cafes, adorned with classic wrought-iron furniture, invite travelers to savor the moment while soaking in the vibrant atmosphere.</p>
+ 
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>"France 🗼"</h3>
+          </div>
+          <p>The city views of France are nothing short of enchanting, each offering a unique blend of history, culture, and architectural beauty. Paris, the capital and crown jewel, stands out as a pinnacle of romance and sophistication. The iconic Eiffel Tower graces the city's skyline, symbolizing not only architectural brilliance but also the essence of love. As the Seine River winds its way through the city, it provides a picturesque setting for leisurely strolls and boat rides. The charming streets and bustling boulevards, adorned with stylish cafes and boutiques, embody the quintessential French elegance.
+
+            Beyond Paris, other cities in France carve their own distinct impressions. Nice, situated on the French Riviera.
+            </p>
+            
+           
+         
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>"USA 🗽"</h3>
+          </div>
+          <p>The city views of the United States are as diverse as the nation itself, showcasing a dynamic blend of modern skyscrapers, historic landmarks, and natural beauty. New York City, often considered the epitome of the American urban landscape, boasts a mesmerizing skyline dominated by iconic structures like the Empire State Building and One World Trade Center. The bustling streets, illuminated billboards of Times Square, and the peaceful greenery of Central Park collectively create a visual symphony that captures the energy and diversity of the city.</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="wrapper2">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>HOTEL </h5>
+        <h2>Hotel Facilities  are available by travelling.  </h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>Pick Up & Drop service offers you a hassle-free and convenient transportation solution.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-mug-hot"></i>
+          <h3>24/7 room service</h3>
+          <p>"Enjoy the convenience of our 24/7 room service, designed to cater to your needs around the clock."</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>Wi-fi📶</h3>
+          <p> Whether you're on a road trip or using public transportation. enjoy uninterrupted connectivity.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="far fa-water"></i>
+          <h3>On-site </h3>
+          <p>on-site restaurant offers a convenient and flavorful solution for every meal.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="room wrapper2 top" id="room">
+    <div class="container">
+      <div class="heading">
+        <h5>ROOMS 🛏️</h5>
+        <h2>Fascinating rooms & suites </h2>
+      </div>
+      <div class="content flex mtop">
+        <div class="left grid2">
+          <div class="box">
+            <i class="fas fa-desktop"></i>
+            <p>Free Cost</p>
+            <h3>No booking fee</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-dollar-sign"></i>
+            <p>Free Cost</p>
+            <h3>Best rate guarantee</h3>
+          </div>
+          <div class="box">
+            <i class="fab fa-resolving"></i>
+            <p>Free Cost</p>
+            <h3>Reservations 24/7</h3>
+          </div>
+          <div class="box">
+            <i class="fal fa-alarm-clock"></i>
+            <p>Free Cost</p>
+            <h3>High-speed Wi-Fi</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-mug-hot"></i>
+            <p>Free Cost</p>
+            <h3>Free breakfast</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-user-tie"></i>
+            <p>Free Cost</p>
+            <h3>One person free</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img src="https://assets.vogue.com/photos/63a4e42740478325ce3b5baf/master/pass/00-promo.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+      <div class="heading">
+        <h5>"Enjoy your happy travels!"</h5>
+        <h2> <span>"Safe travels</span>  wonderful adventures ahead!"</h2>
+      </div>
+
+      <div id="time" class="flex1 mtop"> </div>
+    </div>
+  </section>
+  <script src="js/jquery.countdown.js" charset="utf-8"></script>
+  <script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('#time').countdown('2024/01/01', function(event) {
+      $(this).html(event.strftime(
+        '<div class="clock"><span>%d</span> <p>Days</p></div> ' +
+        '<div class="clock"><span>%H</span> <p>Hours</p></div> ' +
+        '<div class="clock"><span>%M</span> <p>Minutes</p></div> ' +
+        '<div class="clock"><span>%S</span> <p>Seconds</p></div> '
+      ));
+    });
+  </script>
+
+
+  <section class="offer mtop" id="services">
+    <div class="container">
+      <div class="heading">
+        <h5>PAKAGES </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="https://i.ytimg.com/vi/tWD_-Rzrn8o/maxresdefault.jpg" alt="no img">
+          </div>
+          <div class="right">
+            <h4>MUMBAI</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From $50.6</h5>
+            <button class="flex1">
+              <span>Book Now</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="https://thetravelcurry.com/wp-content/uploads/2020/09/DSC_4641.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>HAVALI</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From $40.6</h5>
+            <button class="flex1">
+              <span>Book Now</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="https://i.insider.com/59f10831cfad391bd357aeeb?width=700" alt="no img">
+          </div>
+          <div class="right">
+            <h4>SYDNEY</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From $40.6</h5>
+            <button class="flex1">
+              <span>Book Now</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="https://easylinkindia.mo.cloudinary.net/imtp/france_side1.jpg" alt="No img">
+          </div>
+          <div class="right">
+            <h4>PARIS</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h5>From $50.6</h5>
+            <button class="flex1">
+              <span>Book Now</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area top">
+    <div class="container">
+      <div class="heading">
+        <h5>SERVICES</h5>
+        <h3>Available Services</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="https://eatforum.org/content/uploads/2018/05/EAT_pasta_tomato_basil_2018_1200x675-900x675.jpg" alt="no img">
+        </div>
+        <div class="right">
+          <ul>
+            <li>Food and Drinks </li>
+            <li>Fatest Travel Adventures </li>
+            <li>Affordable Hotels</li>
+          </ul>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer2 about wrapper timer top" id="shop">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <h5>UP TO 30% OFF</h5>
+          <h3>Swimming for man</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Swimming doller dolor sit aet odu tur adiing elitse</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 18+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Book Now</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h5>UP TO 50% OFF</h5>
+          <h3>Swimming for woman</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Swimming doller dolor sit aet odu tur adiing elitse</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 18+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Book Now</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h5>UP TO 30% OFF</h5>
+          <h3>Swimming for Childern</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Swimming doller dolor sit aet odu tur adiing elitse</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 10+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Book Now</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="customer top" id="testimonials">
+    <div class="container">
+      <div class="heading">
+        <h5>TESTIMONIALS </h5>
+        <h3>What customers say </h3>
+      </div>
+
+      <div class="owl-carousel owl-theme mtop">
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="AnjaliPhoto.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Anjali Jaiswal</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc-ZYnxm80UH2kttrbA-I09SSa4heZFQ5Tdg&usqp=CAU" alt="">
+            </div>
+            <div class="text">
+              <h3>Honey</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="https://i.pinimg.com/236x/59/3b/fa/593bfa7007b84becebb6b91ce59ec62c.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg" height="300px" width="800px" alt="no img">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://thumbs.dreamstime.com/b/travel-world-landmarks-background-blue-sky-46083021.jpg" height="300px" width="800px" alt="no img">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXRAy6k-QSMzI7SJaqUt7amfFHOprsraWSw&usqp=CAU" height="300px" width="800px" alt="no img">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuh7LxhJu05ATt4rSPmKTCf9HUxgA_IvbbHw&usqp=CAU"  height="300px" width="800px" alt="no img">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://img.freepik.com/free-photo/travel-concept-with-landmarks_23-2149153256.jpg"  height="300px"  width="800px" alt="no img">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_640.jpg" height="300px" width="800px" alt="no img">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://media.istockphoto.com/id/1034301914/photo/nature-photographer-norway-lofoten-archipelago.webp?b=1&s=170667a&w=0&k=20&c=jwzlo-cFxJv0xaN-ral78aJRTKrVRxuZ8W8SfwwQC0c="  height="300px" width="800px" alt="no img">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://blog.thomascook.in/wp-content/uploads/2018/05/img-7-3-e1526876027464.jpg" height="300px" width="800px" alt="no img">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  <section class="blog top" id="blog">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR BLOG</h5>
+        <h3>News & articles updates</h3>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="img">
+            <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/02/travelblogger1.jpg" alt="">
+            <span>Blog</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3> Technology blog</h3>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="https://lakshmisharath.com/wp-content/uploads/2017/02/Travel-Blogger-1024x682.jpg" alt="">
+            <span>Blog</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3> Travel blog</h3>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUcP0EQPpkXQsUEeAlElOHN9EjiIoGGCmKN5MCeqqkBPvX0JTblY8QbUAeMSy-wiIZ1o&usqp=CAU" alt="">
+            <span>Blog</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3> Adventure blog</h3>
+            <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>         
+  </section>
+
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1638187678048!5m2!1sen!2snp" width="600" height="450" style="border:0;"
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Feedback</h2>
+        <p> "I would appreciate your feedback"</p>
+        <div class="input flex">
+          <input type="email" placeholder="Your Email address">
+          <button class="flex1">
+            <span>Send..</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="https://i.pinimg.com/736x/69/69/d9/6969d98d55bf6f2600153585a2b4ef9b.jpg" height="250px" width="`100px" alt="">
+          </div>
+          <p></p>
+          <div class="social flex">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Big Data</li>
+            <li><i class="fas fa-angle-double-right"></i>Wellness</li>
+            <li><i class="fas fa-angle-double-right"></i>Spa Gallery</li>
+            <li><i class="fas fa-angle-double-right"></i>Reservation</li>
+            <li><i class="fas fa-angle-double-right"></i>FAQ</li>
+            <li><i class="fas fa-angle-double-right"></i>Contact</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Restaurant</li>
+            <li><i class="fas fa-angle-double-right"></i>Swimming Pool</li>
+            <li><i class="fas fa-angle-double-right"></i>Wellness & Spa</li>
+            <li><i class="fas fa-angle-double-right"></i>Conference Room</li>
+            <li><i class="fas fa-angle-double-right"></i>Events</li>
+            <li><i class="fas fa-angle-double-right"></i>Adult Room</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>205 Fida Walinton, Tongo Street Front India</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+123 456 7898</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>anjaliaj7067208@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
